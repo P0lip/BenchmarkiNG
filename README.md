@@ -19,6 +19,8 @@ You will need the following things properly installed on your computer:
 
 Run `yarn`
 
+Run `yarn natives`
+
 ## Running / Development
 
 Run `ng serve` for a dev server. The app will automatically reload if you change any of the source files.
