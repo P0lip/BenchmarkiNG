@@ -1,0 +1,8 @@
+#!/bin/sh
+executable=$1
+if [[ "$OSTYPE" == "linux-gnu" ]]; then
+  executable=`which chromium`
+elif [[ "$OSTYPE" == "darwin"* ]]; then
+  executable=/Applications/Chromium.app/Contents/MacOS/Chromium
+fi
+$executable http://localhost:4200 --enable-devtools-experiments --enable-experimental-web-platform-features --javascript-harmony --js-flags='--allow-natives-syntax' &

@@ -1,0 +1,49 @@
+section {
+  border: 1px solid #414A59;
+  padding: 10px;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+h2 {
+  margin-top: 0;
+  margin-bottom: 5px;
+  font-size: 24px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  display: flex;
+  flex-flow: row-reverse nowrap;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 10px 0;
+}
+
+span {
+  display: block;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+}
+
+.reference {
+  font-size: 11px;
+  font-weight: 100;
+  line-height: 11px;
+  padding-top: 5px;
+}
+
+input {
+  margin-right: 10px;
+}
+
+.error {
+  padding-top: 5px;
+  color: #CC575D;
+}

@@ -1,0 +1,29 @@
+<div>
+  <app-settings (settings)="handleChange($event)"></app-settings>
+  <script-zone
+    #script
+    *ngFor="let script of scripts; let i = index;"
+    [context]="context"
+    [src]="script.src"
+    [title]="script.title"
+    [index]="i"
+    (remove)="removeScript(i)"
+    (source)="handleScript(i, $event)"></script-zone>
+
+  <div>
+    <input id="run-in-worker" type="checkbox" [(ngModel)]="runInWorker">
+    <label for="run-in-worker">No DOM access (recommended)</label>
+  </div>
+  <div>
+    <label for="iterations">Iterations</label>
+    <input id="iterations" type="number" min="10" max="100000" [(ngModel)]="iterations">
+  </div>
+
+  <button id="execute" (click)="isRunning ? stop() : execute()">{{ isRunning ? "Stop" : "Execute" }}</button>
+  <button id="new-test" *ngIf="!isRunning" (click)="addScript()">Add new test</button>
+  <div *ngIf="isRunning">Benchmarking</div>
+  <div class="exception" *ngIf="exception">{{exception}}</div>
+</div>
+<div>
+  <app-results [results]="results"></app-results>
+</div>

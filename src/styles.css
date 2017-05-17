@@ -1,0 +1,18 @@
+:root {
+  --main-color: #303642;
+  --secondary-color: #414A59;
+  --blue-color: #5294E2;
+  --text-color: #F5F6F7;
+  --font-serif: "Catamaran";
+}
+
+html {
+  background: var(--main-color);
+}
+
+body {
+  font-family: var(--font-serif);
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+}

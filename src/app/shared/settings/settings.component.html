@@ -1,0 +1,17 @@
+<section>
+  <h2>Inject</h2>
+  <ul>
+    <li *ngFor="let option of options">
+      <label for="{{option.id}}">
+        <span>{{option.title}}</span>
+        <span class="reference">Referenced as {{option.referencedAs}}</span>
+      </label>
+      <input
+        id="{{option.id}}"
+        type="checkbox"
+        [(ngModel)]="option.checked"
+        (ngModelChange)="onChange(assign({}, option, { checked: $event }))"
+      >
+    </li>
+  </ul>
+</section>

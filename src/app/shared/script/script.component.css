@@ -1,0 +1,49 @@
+:host {
+  display: flex;
+  flex-flow: column nowrap;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+button {
+  position: absolute;
+  right: 10px;
+  top: 15px;
+  -webkit-appearance: none;
+  background: none;
+  cursor: pointer;
+  border: 0;
+  outline: 0;
+}
+
+button svg {
+  width: 20px;
+  height: 20px;
+  fill: #F5F6F7;
+}
+
+h4 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 20px;
+  outline: none;
+}
+
+textarea {
+  background: #303642;
+  border: 1px solid #5294E2;
+  -webkit-appearance: none;
+  font-family: "Monaco";
+  font-weight: 100;
+  box-shadow: none;
+  min-height: 100px;
+  box-shadow: none;
+  outline: none;
+  color: #F5F6F7;
+  resize: vertical;
+}
+
+.error {
+  padding-top: 5px;
+  color: #CC575D;
+}

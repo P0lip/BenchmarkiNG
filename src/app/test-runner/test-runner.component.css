@@ -1,0 +1,43 @@
+:host {
+  display: flex;
+}
+
+:host > div {
+  flex-basis: 50%;
+  padding: 0 10px;
+}
+
+script-zone {
+  border: 1px solid #414A59;
+  padding: 10px;
+}
+
+button {
+  margin-top: 10px;
+  cursor: pointer;
+  -webkit-appearance: none;
+  border: 1px solid var(--secondary-color);
+  outline: 0;
+  font-family: var(--font-serif);
+  background-color: var(--main-color);
+  color: var(--text-color);
+  text-shadow: none;
+  font-size: 14px;
+  padding: 5px 10px;
+}
+
+button:hover {
+  background: var(--blue-color);
+}
+
+input[type="number"] {
+  -webkit-appearance: none;
+  background: var(--main-color);
+  margin-left: 5px;
+  border: 1px solid var(--secondary-color);
+  outline: 0;
+  font-family: var(--font-serif);
+  font-size: 14px;
+  padding: 5px 10px;
+  color: var(--text-color);
+}
